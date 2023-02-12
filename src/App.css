@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: 'Markazi Text';
 }
+h1 {
+}
+p {
+  font-family: 'Karla';
+  font-weight: normal;
+}
 .container {
   height: 100vh;
   width: 100%;
