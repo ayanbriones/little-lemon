@@ -5,40 +5,38 @@
 }
 .container {
   height: 100vh;
-  display: grid;
+  width: 100%;
   border: 5px solid green;
-  grid-template:
-    'header nav' auto
-    'main main' 1fr
-    'footer footer' auto
-    / auto 1fr;
 }
 .header {
-  padding: 20px;
-  background-color: green;
-  grid-area: header;
+  padding: 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
 }
-
+.header img {
+  padding: 1rem;
+}
 .nav {
-  padding: 20px;
-  background-color: aqua;
-  grid-area: nav;
+  padding: 1rem;
+  overflow: hidden;
 }
-
-.nav ul li {
-  display: inline-block;
+.nav ul {
+  align-self: center;
+  list-style: none;
+  display: flex;
 }
 
 .nav li {
-  list-style: none;
+  padding: 1.5rem;
 }
 .main {
   padding: 20px;
   background-color: blanchedalmond;
-  grid-area: main;
 }
 .footer {
   padding: 20px;
   background-color: blueviolet;
-  grid-area: footer;
 }
