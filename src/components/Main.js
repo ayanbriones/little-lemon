@@ -1,5 +1,6 @@
 import React from 'react'
 import CallToAction from './CallToAction'
+import CustomersSay from './CustomersSay'
 import Specials from './Specials'
 
 export default function Main() {
@@ -7,8 +8,7 @@ export default function Main() {
     <main className='main'>
       <CallToAction />
       <Specials />
-      <Specials />
-      <Specials />
+      <CustomersSay />
     </main>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import greekSalad from '../assets/greek salad.jpg'
 
-export default function Card() {
+export default function SpecialsCard() {
   return (
     <div className='card'>
       <title>Greek Salat</title>

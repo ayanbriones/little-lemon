@@ -1,13 +1,15 @@
 import React from 'react'
+import CustomersSayCard from './CustomersSayCard'
 
 export default function CustomersSay() {
-  return <section>
-    <header>
+  return (
+    <section>
+      <header>
         <h2>Testimonials</h2>
-    </header>
-    <p>Rating</p>
-    <img src={} />
-    <p>Name</p>
-    <p>Review Text</p>
-  </section>
+      </header>
+      <CustomersSayCard />
+      <CustomersSayCard />
+      <CustomersSayCard />
+    </section>
+  )
 }
