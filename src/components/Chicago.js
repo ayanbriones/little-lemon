@@ -6,10 +6,9 @@ export default function Chicago() {
       <h2>Little Lemon</h2>
       <h3>Chicago</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui modi
-        tenetur minus nemo beatae rem, labore doloribus architecto molestias
-        dolorum odio corporis dignissimos quibusdam ad quas iure, vel quis
-        repellendus.
+        Little Lemon is a charming neighborhood bistro that serves simple food
+        and classic cocktails in a lively but casual environment. The restaurant
+        features a locally-sourced menu with daily specials.
       </p>
       <img src={chicagoPhoto} height={300} alt='' />
       <img src={chicagoPhoto} height={300} alt='' />
