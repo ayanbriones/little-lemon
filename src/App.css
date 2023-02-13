@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: 'Markazi Text';
 }
+
+:root {
+  --green: #495e57;
+}
 h1 {
 }
 p {
@@ -17,15 +21,10 @@ p {
 .main-header {
   padding: 1rem;
   display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.main-header img {
-  padding: 1rem;
-}
-.nav {
-  padding: 1rem;
 }
 .nav ul {
   display: flex;
@@ -35,13 +34,36 @@ p {
   list-style: none;
 }
 
-.nav li {
-  /* padding: 1.5rem; */
+.bg-green {
+  background-color: var(--green);
 }
-.main {
-  padding: 1rem;
-  background-color: blanchedalmond;
+
+.call-to-action {
+  display: flex;
+  gap: 2rem;
+  height: 40vh;
+  justify-content: space-around;
+  color: white;
 }
+
+.call-to-action > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.call-to-action .image-container {
+  position: relative;
+  height: 70%;
+  align-self: center;
+}
+
+.call-to-action img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .footer {
   padding: 1rem;
   background-color: blueviolet;

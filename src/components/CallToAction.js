@@ -3,8 +3,8 @@ import heroImage from '../assets/Mario and Adrian A.jpg'
 
 export default function CallToAction() {
   return (
-    <section className='hero'>
-      <header>
+    <section className='call-to-action bg-green'>
+      <div>
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
@@ -12,9 +12,11 @@ export default function CallToAction() {
           voluptatum voluptate perferendis nobis, iste libero! Magni quod ipsum
           culpa esse!
         </p>
-        <img src={heroImage} height='300' alt='Little Lemon Restaurant' />
         <button className='button'>Reserve a table</button>
-      </header>
+      </div>
+      <div className='image-container'>
+        <img src={heroImage} alt='Little Lemon Restaurant' />
+      </div>
     </section>
   )
 }
