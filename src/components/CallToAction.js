@@ -4,7 +4,7 @@ import heroImage from '../assets/Mario and Adrian A.jpg'
 export default function CallToAction() {
   return (
     <section className='call-to-action bg-green'>
-      <div>
+      <div className='left-container'>
         <h1 className='title fg-yellow'>Little Lemon</h1>
         <h2 className='subtitle'>Chicago</h2>
         <p className='lead-text'>

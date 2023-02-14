@@ -13,6 +13,15 @@
   --gray: #edefee;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header,
+section {
+  padding: 4rem 0;
+}
 .title,
 .subtitle {
   font-family: 'Markazi Text';
@@ -104,14 +113,15 @@ a:active {
 .call-to-action {
   display: flex;
   gap: 2rem;
-  height: 50vh;
+  /* height: 50vh; */
   justify-content: space-around;
-  padding: 0 10%;
+  padding: 0 20%;
   color: white;
 }
 
-.call-to-action > div {
+.call-to-action .left-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
   text-align: left;
   justify-content: center;
@@ -120,10 +130,15 @@ a:active {
 .call-to-action p {
   margin: 1rem 0;
 }
+
+.call-to-action .left-container,
 .call-to-action .image-container {
-  position: relative;
-  height: 70%;
+  /* position: relative; */
+  /* height: 60%; */
   align-self: center;
+}
+.call-to-action .left-container {
+  width: 100%;
 }
 
 .call-to-action img {
