@@ -13,14 +13,9 @@
   --gray: #edefee;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 header,
 section {
-  padding: 4rem 0;
+  padding: 4rem 16rem;
 }
 .title,
 .subtitle {
@@ -113,37 +108,25 @@ a:active {
 .call-to-action {
   display: flex;
   gap: 2rem;
-  /* height: 50vh; */
-  justify-content: space-around;
-  padding: 0 20%;
   color: white;
 }
 
-.call-to-action .left-container {
+.call-to-action .right,
+.call-to-action .left {
   display: flex;
   width: 100%;
   flex-direction: column;
-  text-align: left;
-  justify-content: center;
 }
 
 .call-to-action p {
   margin: 1rem 0;
 }
 
-.call-to-action .left-container,
-.call-to-action .image-container {
-  /* position: relative; */
-  /* height: 60%; */
-  align-self: center;
-}
-.call-to-action .left-container {
-  width: 100%;
-}
-
 .call-to-action img {
-  object-fit: cover;
+  width: 100%;
   height: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .call-to-action .button {
