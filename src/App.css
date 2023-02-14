@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Markazi Text';
+  /* font-family: 'Markazi Text'; */
+  font-family: 'Karla';
 }
 
 :root {
   --green: #495e57;
   --yellow: #f4ce14;
+  --black: #333333;
+  --gray: #edefee;
 }
 
+.title,
+.subtitle {
+  font-family: 'Markazi Text';
+}
 .title {
   font-size: 4rem;
   font-weight: bold;
@@ -33,6 +40,10 @@
   background-color: var(--yellow);
 }
 
+.fg-black {
+  color: var(--black);
+}
+
 .bg-green {
   background-color: var(--green);
 }
@@ -47,8 +58,20 @@
   cursor: pointer;
   border: none;
 }
+
+.nav-list li {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 1rem;
+}
+
+.nav-list li:hover {
+  background-color: var(--yellow);
+}
+
 .button:hover {
-  background-color: #edefee;
+  background-color: var(--gray);
 }
 .container {
   height: 100vh;
@@ -65,9 +88,17 @@
 .nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.625rem;
   align-self: center;
   list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--black);
 }
 
 .call-to-action {
