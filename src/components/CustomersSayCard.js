@@ -1,11 +1,13 @@
 import React from 'react'
-import cardPhoto from '../assets/lemon dessert.jpg'
+import cardPhoto from '../assets/74.jpg'
 export default function CustomersSayCard() {
   return (
-    <div className='card'>
+    <div className='card bg-gray'>
       <p>Rating</p>
-      <img src={cardPhoto} alt='' />
-      <p>Name</p>
+      <div className='wrapper'>
+        <img src={cardPhoto} alt='' />
+        <p>Michael Ruiz</p>
+      </div>
       <p>Review Text</p>
     </div>
   )
