@@ -15,7 +15,8 @@
 }
 
 /* header, */
-section {
+section,
+footer {
   padding: 4rem 16rem;
 }
 .title,
@@ -84,14 +85,14 @@ section {
   border: none;
 }
 
-.nav-list li {
+header .nav-list li {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.625rem;
   border-radius: 1rem;
 }
 
-.nav-list li:hover {
+header .nav-list li:hover {
   background-color: var(--yellow);
 }
 
@@ -284,8 +285,26 @@ a:active {
 }
 
 .footer {
-  padding: 1rem;
-  background-color: blueviolet;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer h4 {
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+.footer .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.footer li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (width <= 40em) {

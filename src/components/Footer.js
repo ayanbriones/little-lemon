@@ -2,14 +2,14 @@ import React from 'react'
 import footerPhoto from '../assets/restauranfood.jpg'
 export default function Footer() {
   return (
-    <footer className='footer'>
+    <footer className='footer fg-green'>
       <img src={footerPhoto} height={300} alt='' />
       <div className='doormat'>
         <h4>
           Doormat <br />
           Navigation
         </h4>
-        <ul>
+        <ul className='nav-list'>
           <li>Home</li>
           <li>About</li>
           <li>Menu</li>
