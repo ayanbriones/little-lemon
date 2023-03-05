@@ -1,29 +1,32 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import LittleLemonLogo from '../assets/Logo.svg'
 
 export default function Nav() {
   return (
     <header className='main-header'>
-      <img src={LittleLemonLogo} alt='Little Lemon Logo' />
+      <Link to='/'>
+        <img src={LittleLemonLogo} alt='Little Lemon Logo' />
+      </Link>
       <nav className='nav nav-list fg-black'>
         <ul>
           <li>
-            <a href='/'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='/'>About</a>
+            <Link to='/about'>About</Link>
           </li>
           <li>
-            <a href='/'>Menu</a>
+            <Link to='/menu'>Menu</Link>
           </li>
           <li>
-            <a href='/'>Reservations</a>
+            <Link to='/reservations'>Reservations</Link>
           </li>
           <li>
-            <a href='/'>Order Online</a>
+            <Link to='/order-online'>Order Online</Link>
           </li>
           <li>
-            <a href='/'>Login</a>
+            <Link to='/login'>Login</Link>
           </li>
         </ul>
       </nav>
