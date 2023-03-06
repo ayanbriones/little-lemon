@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import heroImage from '../assets/Mario and Adrian A.jpg'
 
 export default function CallToAction() {
@@ -12,7 +13,9 @@ export default function CallToAction() {
           and classic cocktails in a lively but casual environment. The
           restaurant features a locally-sourced menu with daily specials.
         </p>
-        <button className='button bg-yellow'>Reserve a table</button>
+        <Link to='/reservations'>
+          <button className='button bg-yellow'>Reserve a table</button>
+        </Link>
       </div>
       <div className='right'>
         <img src={heroImage} alt='Little Lemon Restaurant' />

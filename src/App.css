@@ -330,6 +330,18 @@ a:active {
   cursor: pointer;
 }
 
+.about,
+.menu,
+.reservations,
+.order-online,
+.login {
+  min-height: 100vh;
+}
+
+#reservation-form {
+  margin: 0 auto;
+}
+
 @media (width <= 40em) {
   section {
     padding: 1rem;

@@ -10,24 +10,24 @@ export default function Nav() {
       </Link>
       <nav className='nav nav-list fg-black'>
         <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to='/menu'>Menu</Link>
-          </li>
-          <li>
-            <Link to='/reservations'>Reservations</Link>
-          </li>
-          <li>
-            <Link to='/order-online'>Order Online</Link>
-          </li>
-          <li>
-            <Link to='/login'>Login</Link>
-          </li>
+          <Link to='/'>
+            <li>Home</li>
+          </Link>
+          <Link to='/about'>
+            <li>About</li>
+          </Link>
+          <Link to='/menu'>
+            <li>Menu</li>
+          </Link>
+          <Link to='/reservations'>
+            <li>Reservations</li>
+          </Link>
+          <Link to='/order-online'>
+            <li>Order Online</li>
+          </Link>
+          <Link to='/login'>
+            <li>Login</li>
+          </Link>
         </ul>
       </nav>
     </header>
