@@ -1,5 +1,6 @@
 import React from 'react'
 import SpecialsCard from './SpecialsCard'
+import '../styles/Specials.css'
 
 export default function Specials() {
   return (
