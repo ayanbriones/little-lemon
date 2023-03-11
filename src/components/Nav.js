@@ -9,9 +9,6 @@ export default function Nav() {
   const handleClick = () => {
     setToggleNav((oldvalue) => !oldvalue)
   }
-  useEffect(() => {
-    console.log(toggleNav)
-  })
   return (
     <header className='main-header'>
       <Link to='/'>

@@ -8,18 +8,21 @@ import Menu from './components/Menu'
 import Nav from './components/Nav'
 import Login from './components/Login'
 import BookingPage from './components/BookingPage'
-import { useEffect, useReducer } from 'react'
+import { useReducer } from 'react'
 import { fetchAPI, submitAPI } from './api.js'
 
-const initializeTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
-// const initializeTimes = () => {
-//   return fetchAPI(new Date())
-// }
-
+function initializeTimes() {
+  return fetchAPI(new Date())
+}
 function updateTimes(state, action) {
   switch (action.type) {
-    case 'reserve': {
-      console.log('Reserved ', action.time)
+    case 'select_date': {
+      const result = fetchAPI(new Date(action.payload))
+      return result
+    }
+    case 'submit': {
+      const result = submitAPI(action.payload)
+      console.log(result)
       return state
     }
     default:
@@ -27,15 +30,8 @@ function updateTimes(state, action) {
   }
 }
 function App() {
-  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes)
-  const handleReserveTime = (time) => {
-    dispatch({ type: 'reserve', time: time })
-  }
+  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes())
 
-  useEffect(() => {
-    const result = fetchAPI(new Date())
-    console.log(result)
-  })
   return (
     <div className='container'>
       <Nav />
@@ -46,10 +42,7 @@ function App() {
         <Route
           path='/reservations'
           element={
-            <BookingPage
-              availableTimes={availableTimes}
-              handleReserveTime={handleReserveTime}
-            />
+            <BookingPage availableTimes={availableTimes} dispatch={dispatch} />
           }
         />
         <Route path='/order-online' element={<OrderOnline />} />
