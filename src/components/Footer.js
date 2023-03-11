@@ -9,7 +9,7 @@ export default function Footer() {
           <div className='image-wrapper'>
             <img src={footerPhoto} alt='' />
           </div>
-          <div className='wrapper'>
+          <div className='doormat-nav'>
             <h4>
               Doormat <br />
               Navigation
