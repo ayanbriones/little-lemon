@@ -1,15 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import LittleLemonLogo from '../assets/Logo.svg'
+import '../styles/Nav.css'
+import Hamburger from './Hamburger'
 
 export default function Nav() {
+  const [toggleNav, setToggleNav] = useState(false)
+  const handleClick = () => {
+    setToggleNav((oldvalue) => !oldvalue)
+  }
+  useEffect(() => {
+    console.log(toggleNav)
+  })
   return (
     <header className='main-header'>
       <Link to='/'>
-        <img src={LittleLemonLogo} alt='Little Lemon Logo' />
+        <img
+          src={LittleLemonLogo}
+          alt='Little Lemon Logo'
+          className='little-lemon-logo'
+        />
       </Link>
-      <nav className='nav nav-list fg-black'>
-        <ul>
+      <button className='hamburger' onClick={handleClick}>
+        <Hamburger />
+      </button>
+      <nav className={`nav fg-black ${toggleNav ? '' : 'nav-close'}`}>
+        <ul className='nav-list'>
           <Link to='/'>
             <li>Home</li>
           </Link>

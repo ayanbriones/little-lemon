@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function BookingForm(props) {
-  const { availableTimes } = props
+  const { availableTimes = [] } = props
   const [reservation, setReservation] = useState({
     date: null,
     guests: 0,
@@ -24,10 +24,11 @@ export default function BookingForm(props) {
   }
   return (
     <form
-      style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}
+      style={{ display: 'grid' }}
       id='reservation-form'
       onSubmit={handleSubmit}
     >
+      <h2>Book Now</h2>
       <label htmlFor='res-date'>Choose date</label>
       <input
         type='date'
@@ -69,7 +70,9 @@ export default function BookingForm(props) {
         <option>Birthday</option>
         <option>Anniversary</option>
       </select>
-      <button type='submit'>Make your reservation</button>
+      <button type='submit' className='button bg-yellow'>
+        Make your reservation
+      </button>
     </form>
   )
 }

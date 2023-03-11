@@ -1,0 +1,22 @@
+#reservation-form {
+  margin: 0 auto;
+  width: 30vw;
+}
+
+input,
+select,
+button {
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+#reservation-form button {
+  border-radius: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
