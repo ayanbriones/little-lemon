@@ -2,13 +2,22 @@
   display: flex;
   gap: 2rem;
   color: white;
+  padding-block: calc(48px + 1.5625vw);
 }
-
+.chicago .title {
+  white-space: nowrap;
+}
+.chicago .wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
 .chicago .right,
 .chicago .left {
   display: flex;
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 
 .chicago .right {
@@ -41,4 +50,16 @@
   width: 100%;
   top: -2em;
   left: -2em;
+}
+
+@media (min-width: 768px) {
+  .chicago {
+    padding-inline: 10vw;
+  }
+  .chicago .wrapper {
+    flex-direction: row;
+  }
+  .chicago .wrapper .left {
+    text-align: left;
+  }
 }

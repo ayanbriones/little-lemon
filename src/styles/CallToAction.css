@@ -8,6 +8,9 @@
   padding-block: calc(48px + 1.5625vw);
 }
 
+.call-to-action .title {
+  white-space: nowrap;
+}
 .call-to-action .right,
 .call-to-action .left {
   display: flex;

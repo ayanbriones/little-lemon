@@ -5,10 +5,17 @@ export default function CustomersSayCard() {
     <div className='card bg-gray'>
       <p>Rating</p>
       <div className='wrapper'>
-        <img src={cardPhoto} alt='' />
+        <div className='image-wrapper'>
+          <img src={cardPhoto} alt='' />
+        </div>
         <p>Michael Ruiz</p>
       </div>
-      <p>Review Text</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus
+        explicabo sed molestiae voluptatum aperiam dignissimos reprehenderit
+        tempora ipsam et perspiciatis itaque, aut rem! Fuga perspiciatis
+        distinctio molestiae cumque doloribus.
+      </p>
     </div>
   )
 }
