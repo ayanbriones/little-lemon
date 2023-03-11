@@ -81,34 +81,8 @@ footer {
 
 .about,
 .menu,
-.reservations,
+.bookings,
 .order-online,
 .login {
   min-height: 100vh;
-}
-
-@media (max-width: 844px) {
-  /* .call-to-action .wrapper { */
-  /* width: 100%; */
-  /* } */
-}
-@media (width <= 40em) {
-  section,
-  .call-to-action .wrapper,
-  footer {
-    /* padding: 1rem; */
-    /* width: 100%; */
-    /* flex-direction: column; */
-  }
-  .specials .cards {
-    /* flex-wrap: wrap; */
-  }
-  .customers-say .card {
-    /* width: 40%; */
-  }
-  #reservation-form {
-    /* margin: 0 auto; */
-    /* width: 100%; */
-    /* padding: 2rem; */
-  }
 }

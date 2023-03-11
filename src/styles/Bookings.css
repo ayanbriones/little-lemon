@@ -1,0 +1,33 @@
+.bookings {
+  padding-inline: 10vw;
+  padding-block: calc(48px + 1.5625vw);
+}
+
+#reservation-form {
+  margin: 0 auto;
+}
+
+.bookings input,
+.bookings select,
+.bookings button {
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.bookings label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+#reservation-form button {
+  border-radius: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #reservation-form {
+    margin: 0 auto;
+    width: 30vw;
+  }
+}

@@ -8,9 +8,13 @@ import Menu from './components/Menu'
 import Nav from './components/Nav'
 import Login from './components/Login'
 import BookingPage from './components/BookingPage'
-import { useReducer } from 'react'
+import { useEffect, useReducer } from 'react'
+import { fetchAPI, submitAPI } from './api.js'
 
 const initializeTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
+// const initializeTimes = () => {
+//   return fetchAPI(new Date())
+// }
 
 function updateTimes(state, action) {
   switch (action.type) {
@@ -28,6 +32,10 @@ function App() {
     dispatch({ type: 'reserve', time: time })
   }
 
+  useEffect(() => {
+    const result = fetchAPI(new Date())
+    console.log(result)
+  })
   return (
     <div className='container'>
       <Nav />
