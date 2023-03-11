@@ -1,5 +1,6 @@
 import React from 'react'
 import CustomersSayCard from './CustomersSayCard'
+import '../styles/CustomersSay.css'
 
 export default function CustomersSay() {
   return (

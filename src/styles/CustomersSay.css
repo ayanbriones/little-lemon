@@ -4,10 +4,12 @@
   gap: 4rem;
   justify-content: center;
   align-items: center;
+  padding-inline: 10vw;
+  padding-block: calc(48px + 1.5625vw);
 }
 .customers-say .cards {
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -28,8 +30,11 @@
 }
 
 .customers-say .card img {
-  display: block;
-  width: 50%;
-  object-fit: contain;
-  overflow: hidden;
+  /* display: block; */
+  width: 100%;
+  /* object-fit: contain; */
+  /* overflow: hidden; */
+}
+
+@media (min-width: 768px) {
 }
