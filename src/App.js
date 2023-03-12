@@ -10,6 +10,7 @@ import Login from './components/Login'
 import BookingPage from './components/BookingPage'
 import { useReducer } from 'react'
 import { fetchAPI, submitAPI } from './api.js'
+import CallToAction from './components/CallToAction'
 
 function initializeTimes() {
   return fetchAPI(new Date())
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className='container'>
       <Nav />
+      <CallToAction />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />

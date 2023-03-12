@@ -29,6 +29,7 @@
 
 .footer .doormat {
   justify-content: left;
+  gap: 1.5rem;
 }
 
 .footer img {
