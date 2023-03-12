@@ -10,7 +10,7 @@ import Login from './components/Login'
 import BookingPage from './components/BookingPage'
 import { useReducer } from 'react'
 import { fetchAPI, submitAPI } from './api.js'
-import CallToAction from './components/CallToAction'
+import ConfirmedBooking from './components/ConfirmedBooking'
 
 function initializeTimes() {
   return fetchAPI(new Date())
@@ -36,7 +36,6 @@ function App() {
   return (
     <div className='container'>
       <Nav />
-      <CallToAction />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />
@@ -49,6 +48,7 @@ function App() {
         />
         <Route path='/order-online' element={<OrderOnline />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/success' element={<ConfirmedBooking />} />
       </Routes>
       <Footer />
     </div>
