@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 import './App.css'
 import About from './components/About'
 import Footer from './components/Footer'
@@ -12,19 +12,14 @@ import { useReducer } from 'react'
 import { fetchAPI, submitAPI } from './api.js'
 import ConfirmedBooking from './components/ConfirmedBooking'
 
-function initializeTimes() {
+const initializeTimes = () => {
   return fetchAPI(new Date())
 }
-function updateTimes(state, action) {
+const updateTimes = (state, action) => {
   switch (action.type) {
     case 'select_date': {
       const result = fetchAPI(new Date(action.payload))
       return result
-    }
-    case 'submit': {
-      const result = submitAPI(action.payload)
-      console.log(result)
-      return state
     }
     default:
       return state
@@ -32,7 +27,14 @@ function updateTimes(state, action) {
 }
 function App() {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes())
+  const navigate = useNavigate()
 
+  const submitForm = async (formData) => {
+    const result = await submitAPI(formData)
+    if (result === true) {
+      navigate('/success')
+    }
+  }
   return (
     <div className='container'>
       <Nav />
@@ -43,7 +45,11 @@ function App() {
         <Route
           path='/reservations'
           element={
-            <BookingPage availableTimes={availableTimes} dispatch={dispatch} />
+            <BookingPage
+              availableTimes={availableTimes}
+              dispatch={dispatch}
+              submitForm={submitForm}
+            />
           }
         />
         <Route path='/order-online' element={<OrderOnline />} />
