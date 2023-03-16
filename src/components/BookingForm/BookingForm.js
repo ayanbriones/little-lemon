@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function BookingForm(props) {
-  const { availableTimes = [], dispatch, submitForm } = props
+  const { availableTimes, dispatch, submitForm } = props
   const [reservation, setReservation] = useState({
     date: new Date().toLocaleDateString(),
     guests: 2,
@@ -18,6 +18,7 @@ export default function BookingForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault()
     // dispatch({ type: 'submit', payload: reservation })
+    console.log(reservation)
     submitForm(reservation)
   }
   return (
