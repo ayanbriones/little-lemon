@@ -1,0 +1,65 @@
+.chicago {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  padding-block: calc(48px + 1.5625vw);
+}
+.chicago .title {
+  white-space: nowrap;
+}
+.chicago .wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.chicago .right,
+.chicago .left {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.chicago .right {
+  padding: 1em;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.chicago p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chicago img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.chicago .img1-wrapper {
+  position: relative;
+  width: 100%;
+  top: 2em;
+  left: 2em;
+}
+.chicago .img2-wrapper {
+  position: relative;
+  width: 100%;
+  top: -2em;
+  left: -2em;
+}
+
+@media (min-width: 768px) {
+  .chicago {
+    padding-inline: 10vw;
+  }
+  .chicago .wrapper {
+    flex-direction: row;
+  }
+  .chicago .wrapper .left {
+    text-align: left;
+  }
+}

@@ -1,0 +1,10 @@
+.confirmed-booking {
+  min-height: 100vh;
+  text-align: center;
+  padding-inline: 10vw;
+  padding-block: calc(48px + 1.5625vw);
+}
+
+.confirmed-booking h2 {
+  margin: 1rem 0;
+}

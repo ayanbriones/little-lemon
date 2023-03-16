@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Markazi Text'; */
+  font-family: 'Karla';
+}
+
+:root {
+  --green: #495e57;
+  --yellow: #f4ce14;
+  --black: #333333;
+  --gray: #edefee;
+  --red: #ee9972;
+}
+
+/* header, */
+section,
+footer {
+  /* padding: calc(48px + 1.5625vw); */
+}
+.title,
+.subtitle {
+  font-family: 'Markazi Text';
+}
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.subtitle {
+  font-size: 3.3333rem;
+  font-weight: normal;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.highlight-text {
+  font-size: 1.3333rem;
+  font-weight: bold;
+}
+.lead-text {
+  font-family: 'Karla';
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fg-yellow {
+  color: var(--yellow);
+}
+
+.fg-green {
+  color: var(--green);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.fg-black {
+  color: var(--black);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.fg-red {
+  color: var(--red);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.container {
+  /* padding: 0 1em; */
+  margin: 0 auto;
+}
+
+.about,
+.menu,
+.bookings,
+.order-online,
+.login {
+  min-height: 100vh;
+}

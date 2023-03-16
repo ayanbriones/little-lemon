@@ -1,0 +1,71 @@
+header .nav-list li {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 1rem;
+}
+header {
+  padding: 1rem;
+}
+
+header .nav-list li:hover {
+  background-color: var(--yellow);
+}
+
+.button:hover {
+  background-color: var(--gray);
+}
+
+.hamburger {
+  background-color: white;
+  border: none;
+}
+.nav-list li {
+  list-style: none;
+}
+.nav {
+  padding-block: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--black);
+}
+.little-lemon-logo {
+  display: none;
+}
+@media (min-width: 767px) {
+  .hamburger {
+    display: none;
+  }
+  .little-lemon-logo {
+    display: block;
+  }
+  .main-header {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    align-self: center;
+    list-style: none;
+  }
+}
+@media (max-width: 766px) {
+  .nav-close {
+    display: none;
+  }
+}
