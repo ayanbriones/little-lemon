@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import heroImage from '../../assets/Mario and Adrian A.jpg'
+import heroImage from '../../assets/restaurant.jpg'
 import './CallToAction.css'
 
 export default function CallToAction() {

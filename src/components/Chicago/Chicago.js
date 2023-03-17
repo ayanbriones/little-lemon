@@ -1,5 +1,6 @@
 import React from 'react'
-import chicagoPhoto from '../../assets/restauranfood.jpg'
+import chicagoPhoto1 from '../../assets/Mario and Adrian Aa.jpg'
+import chicagoPhoto2 from '../../assets/restaurant chef Ba.jpg'
 import './Chicago.css'
 export default function Chicago() {
   return (
@@ -16,10 +17,10 @@ export default function Chicago() {
         </div>
         <div className='right'>
           <div className='img1-wrapper'>
-            <img src={chicagoPhoto} alt='' />
+            <img src={chicagoPhoto1} alt='' />
           </div>
           <div className='img2-wrapper'>
-            <img src={chicagoPhoto} alt='' />
+            <img src={chicagoPhoto2} alt='' />
           </div>
         </div>
       </div>

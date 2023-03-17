@@ -52,6 +52,9 @@
   left: -2em;
 }
 
+.chicago img {
+  border-radius: 1rem;
+}
 @media (min-width: 768px) {
   .chicago {
     padding-inline: 10vw;
