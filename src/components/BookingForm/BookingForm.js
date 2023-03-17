@@ -36,6 +36,7 @@ export default function BookingForm(props) {
         required
         value={reservation.date}
         onChange={handleChange}
+        aria-label='On Click'
       />
       <label htmlFor='res-time'>Choose time</label>
       <select
@@ -45,6 +46,7 @@ export default function BookingForm(props) {
         placeholder='Choose time'
         value={reservation.time}
         onChange={handleChange}
+        aria-label='On Click'
       >
         {availableTimes.map((time) => (
           <option key={time}>{time}</option>
@@ -60,6 +62,7 @@ export default function BookingForm(props) {
         name='guests'
         value={reservation.guests}
         onChange={handleChange}
+        aria-label='On Click'
       />
       <label htmlFor='occasion'>Occasion</label>
       <select
@@ -68,11 +71,16 @@ export default function BookingForm(props) {
         required
         value={reservation.occasion}
         onChange={handleChange}
+        aria-label='On Click'
       >
         <option>Birthday</option>
         <option>Anniversary</option>
       </select>
-      <button type='submit' className='button bg-yellow'>
+      <button
+        type='submit'
+        className='submit button bg-yellow'
+        aria-label='On Click'
+      >
         Make your reservation
       </button>
     </form>

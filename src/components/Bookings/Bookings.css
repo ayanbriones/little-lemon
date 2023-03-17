@@ -35,6 +35,10 @@
   cursor: pointer;
   border: none;
 }
+
+.bookings .submit {
+  min-width: 100%;
+}
 @media (min-width: 768px) {
   #reservation-form {
     margin: 0 auto;
