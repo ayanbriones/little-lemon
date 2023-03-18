@@ -22,7 +22,6 @@ export default function BookingForm(props) {
 
     onSubmit: (values) => {
       submitForm(formik.values)
-      console.log('formik submit', values)
     },
   })
   // const [reservation, setReservation] = useState({
