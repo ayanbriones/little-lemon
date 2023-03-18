@@ -39,6 +39,10 @@
 .bookings .submit {
   min-width: 100%;
 }
+
+.bookings .input-error {
+  color: red;
+}
 @media (min-width: 768px) {
   #reservation-form {
     margin: 0 auto;
